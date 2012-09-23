@@ -1,0 +1,1 @@
+You don't have to do a whole lot to get a hover-revealed menu to work on iOS. The first click triggers the hover state which reveals the menu.

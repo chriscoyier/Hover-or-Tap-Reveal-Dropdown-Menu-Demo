@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.actions {
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  img {
+    vertical-align: middle;
+  }
+  > a {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  right: 0;
+  background: black;
+  color: white;
+  a {
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 8px 15px;
+    &:hover, &:focus {
+      color: black;
+      background: #ccc;
+    }
+  }
+}
+
+.user-dropdown {
+  &:hover, &:focus {
+    .dropdown {
+      display: block;
+    }
+  }
+}
